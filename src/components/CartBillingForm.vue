@@ -132,7 +132,9 @@ export default {
             if((!regExp.test(newValue)) || (newValue.length === 0) || (newValue.length > 18)) {
                 this.isPhoneValid = false;
             }
-        },
+        }
+    },
+    computed: {
         sabmitBtn() {
             this.submitBtn = (this.isFirstValid && this.isLastValid && this.isCityValid && this.isAddressValid
                     && this.isEmailValid && this.isPhoneValid)
